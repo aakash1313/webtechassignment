@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/keywordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Keyword"
+        />
+    <TextView
+        android:id="@+id/error_keyword"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:text="Please enter mandatory field"
+        android:textColor="@color/errorColor"
+        android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter keyword"
+             />
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Category"
+        />
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/distanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Distance(in miles)"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/distance_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:hintEnabled="false"
+        app:errorEnabled="false">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/distance_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter distance (default 10 miles)"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="From"
+        />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationRadioGroup"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:id="@+id/currLocRadio"
+            android:checked="true"
+             />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other. Specify Location"
+            android:id="@+id/otherLocRadio"
+            android:checked="false"
+
+            android:layout_weight="0.13" />
+    </RadioGroup>
+   <TextView
+    android:id="@+id/error_autocomplete"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:text="Please enter mandatory field"
+    android:textColor="@color/errorColor"
+    android:layout_height="wrap_content" />
+   <AutoCompleteTextView
+       android:id="@+id/place_autocomplete_search_btn"
+       android:layout_marginLeft="20dp"
+       android:layout_width="match_parent"
+       android:enabled="false"
+       android:hint="Type in the Location"
+       android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Search"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    </ScrollView>

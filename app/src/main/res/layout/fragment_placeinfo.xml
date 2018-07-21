@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:text="Address"
+            android:textStyle="bold"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/address_view_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:text="Phone Number"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/phone_view_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:autoLink="phone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/price_level_ayout"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:textStyle="bold"
+            android:text="Price Level"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/price_view_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rating_level_layout"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/rating_textView"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:text="Rating"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/rating_view_text"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/rating_textView"
+            android:stepSize="0.1"
+            android:numStars="5"
+            android:rating="4.3"
+            android:layout_marginLeft="80dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/google_page_layout"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="Google Page"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/google_view_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:autoLink="web"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/website_layout"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:text="Website"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/web_view_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:autoLink="web"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
